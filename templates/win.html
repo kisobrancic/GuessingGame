@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Secret Number</title>
+
+    <link rel="stylesheet" href="/static/styleswin.css">
+
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <img src="/static/1652652398_310769_gif-url.gif" alt="number jumping gif">
+        <h1>Guess the Secret Number</h1>
+        <h2>Welcome to the guessing number game</h2>
+        <p>Guess the number between 1 and 20.</p>
+
+        <form action="/", method="post">
+            <input type="number" name="guess" placeholder="Enter your guess here... ">
+            <br><br>
+            <button type="submit">Let me see if I guessed it right .. </button>
+        </form>
+
+        <div class="win">
+        <p>{{message}}</p><br><br><br>
+        <img class="win" src="/static/07-43-00-535_512.gif" alt="celebration confetti">
+        </div>
+    </div>
+
+</body>
+</html>
